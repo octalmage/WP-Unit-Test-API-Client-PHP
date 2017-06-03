@@ -1,6 +1,6 @@
 # octalmage\WPUnitTestAPI\DefaultApi
 
-All URIs are relative to *http://https://wpunittestapi.wpengine.com/wp-json/wp-unit-test-api/v1*
+All URIs are relative to *https://wpunittestapi.wpengine.com/wp-json/wp-unit-test-api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

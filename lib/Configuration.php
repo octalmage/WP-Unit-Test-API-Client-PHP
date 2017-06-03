@@ -88,7 +88,7 @@ class Configuration
      *
      * @var string
      */
-    protected $host = 'http://https://wpunittestapi.wpengine.com/wp-json/wp-unit-test-api/v1';
+    protected $host = 'https://wpunittestapi.wpengine.com/wp-json/wp-unit-test-api/v1';
 
     /**
      * Timeout (second) of the HTTP request, by default set to 0, no timeout
