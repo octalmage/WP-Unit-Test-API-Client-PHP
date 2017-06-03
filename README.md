@@ -71,7 +71,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:8087/wp-json/wp-unit-test-api/v1*
+All URIs are relative to *http://https://wpunittestapi.wpengine.com/wp-json/wp-unit-test-api/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
