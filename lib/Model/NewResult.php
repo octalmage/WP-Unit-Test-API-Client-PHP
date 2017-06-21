@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  octalmage\wp-unit-test-api
+ * @package  octalmage\WPUnitTestApi
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace octalmage\wp-unit-test-api\Model;
+namespace octalmage\WPUnitTestApi\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * NewResult Class Doc Comment
  *
  * @category    Class
- * @package     octalmage\wp-unit-test-api
+ * @package     octalmage\WPUnitTestApi
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -257,10 +257,10 @@ class NewResult implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\octalmage\wp-unit-test-api\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\octalmage\WPUnitTestApi\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\octalmage\wp-unit-test-api\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\octalmage\WPUnitTestApi\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

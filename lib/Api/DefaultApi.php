@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  octalmage\wp-unit-test-api
+ * @package  octalmage\WPUnitTestApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace octalmage\wp-unit-test-api\Api;
+namespace octalmage\WPUnitTestApi\Api;
 
-use \octalmage\wp-unit-test-api\ApiClient;
-use \octalmage\wp-unit-test-api\ApiException;
-use \octalmage\wp-unit-test-api\Configuration;
-use \octalmage\wp-unit-test-api\ObjectSerializer;
+use \octalmage\WPUnitTestApi\ApiClient;
+use \octalmage\WPUnitTestApi\ApiException;
+use \octalmage\WPUnitTestApi\Configuration;
+use \octalmage\WPUnitTestApi\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  octalmage\wp-unit-test-api
+ * @package  octalmage\WPUnitTestApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class DefaultApi
     /**
      * API Client
      *
-     * @var \octalmage\wp-unit-test-api\ApiClient instance of the ApiClient
+     * @var \octalmage\WPUnitTestApi\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \octalmage\wp-unit-test-api\ApiClient|null $apiClient The api client to use
+     * @param \octalmage\WPUnitTestApi\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\octalmage\wp-unit-test-api\ApiClient $apiClient = null)
+    public function __construct(\octalmage\WPUnitTestApi\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class DefaultApi
     /**
      * Get API client
      *
-     * @return \octalmage\wp-unit-test-api\ApiClient get the API client
+     * @return \octalmage\WPUnitTestApi\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class DefaultApi
     /**
      * Set the API client
      *
-     * @param \octalmage\wp-unit-test-api\ApiClient $apiClient set the API client
+     * @param \octalmage\WPUnitTestApi\ApiClient $apiClient set the API client
      *
      * @return DefaultApi
      */
-    public function setApiClient(\octalmage\wp-unit-test-api\ApiClient $apiClient)
+    public function setApiClient(\octalmage\WPUnitTestApi\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -92,9 +92,9 @@ class DefaultApi
      *
      * 
      *
-     * @param \octalmage\wp-unit-test-api\Model\NewResult $results Results to submit. (required)
-     * @throws \octalmage\wp-unit-test-api\ApiException on non-2xx response
-     * @return \octalmage\wp-unit-test-api\Model\Response
+     * @param \octalmage\WPUnitTestApi\Model\NewResult $results Results to submit. (required)
+     * @throws \octalmage\WPUnitTestApi\ApiException on non-2xx response
+     * @return \octalmage\WPUnitTestApi\Model\Response
      */
     public function addResults($results)
     {
@@ -107,9 +107,9 @@ class DefaultApi
      *
      * 
      *
-     * @param \octalmage\wp-unit-test-api\Model\NewResult $results Results to submit. (required)
-     * @throws \octalmage\wp-unit-test-api\ApiException on non-2xx response
-     * @return array of \octalmage\wp-unit-test-api\Model\Response, HTTP status code, HTTP response headers (array of strings)
+     * @param \octalmage\WPUnitTestApi\Model\NewResult $results Results to submit. (required)
+     * @throws \octalmage\WPUnitTestApi\ApiException on non-2xx response
+     * @return array of \octalmage\WPUnitTestApi\Model\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function addResultsWithHttpInfo($results)
     {
@@ -149,23 +149,23 @@ class DefaultApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\octalmage\wp-unit-test-api\Model\Response',
+                '\octalmage\WPUnitTestApi\Model\Response',
                 '/results'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\octalmage\wp-unit-test-api\Model\Response', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\octalmage\WPUnitTestApi\Model\Response', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\octalmage\wp-unit-test-api\Model\Response', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\octalmage\WPUnitTestApi\Model\Response', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\octalmage\wp-unit-test-api\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\octalmage\WPUnitTestApi\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\octalmage\wp-unit-test-api\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\octalmage\WPUnitTestApi\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

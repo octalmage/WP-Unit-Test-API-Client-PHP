@@ -56,8 +56,8 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new octalmage\wp-unit-test-api\Api\DefaultApi();
-$results = new \octalmage\wp-unit-test-api\Model\NewResult(); // \octalmage\wp-unit-test-api\Model\NewResult | Results to submit.
+$api_instance = new octalmage\WPUnitTestApi\Api\DefaultApi();
+$results = new \octalmage\WPUnitTestApi\Model\NewResult(); // \octalmage\WPUnitTestApi\Model\NewResult | Results to submit.
 
 try {
     $result = $api_instance->addResults($results);

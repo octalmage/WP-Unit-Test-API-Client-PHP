@@ -28,9 +28,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "octalmage\\wp-unit-test-api\\" : "lib/" }
+        "psr-4": { "octalmage\\WPUnitTestApi\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "octalmage\\wp-unit-test-api\\" : "test/" }
+        "psr-4": { "octalmage\\WPUnitTestApi\\" : "test/" }
     }
 }
