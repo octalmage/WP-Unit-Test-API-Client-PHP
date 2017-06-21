@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  octalmage\WPUnitTestAPI
+ * @package  octalmage\wp-unit-test-api
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace octalmage\WPUnitTestAPI;
+namespace octalmage\wp-unit-test-api;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 5
  *
  * @category Class
- * @package  octalmage\WPUnitTestAPI
+ * @package  octalmage\wp-unit-test-api
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -722,7 +722,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (octalmage\WPUnitTestAPI) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (octalmage\wp-unit-test-api) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 1.0.0' . PHP_EOL;

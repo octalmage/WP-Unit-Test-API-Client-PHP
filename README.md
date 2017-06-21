@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/octalmage/WPUnitTestAPI.git"
+      "url": "https://github.com/octalmage/wp-unit-test-api.git"
     }
   ],
   "require": {
-    "octalmage/WPUnitTestAPI": "*@dev"
+    "octalmage/wp-unit-test-api": "*@dev"
   }
 }
 ```
@@ -56,8 +56,8 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new octalmage\WPUnitTestAPI\Api\DefaultApi();
-$results = new \octalmage\WPUnitTestAPI\Model\NewResult(); // \octalmage\WPUnitTestAPI\Model\NewResult | Results to submit.
+$api_instance = new octalmage\wp-unit-test-api\Api\DefaultApi();
+$results = new \octalmage\wp-unit-test-api\Model\NewResult(); // \octalmage\wp-unit-test-api\Model\NewResult | Results to submit.
 
 try {
     $result = $api_instance->addResults($results);

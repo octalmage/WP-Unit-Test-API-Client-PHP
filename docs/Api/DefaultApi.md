@@ -1,4 +1,4 @@
-# octalmage\WPUnitTestAPI\DefaultApi
+# octalmage\wp-unit-test-api\DefaultApi
 
 All URIs are relative to *https://wpunittestapi.wpengine.com/wp-json/wp-unit-test-api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **addResults**
-> \octalmage\WPUnitTestAPI\Model\Response addResults($results)
+> \octalmage\wp-unit-test-api\Model\Response addResults($results)
 
 
 
@@ -19,8 +19,8 @@ Creates a new results post.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new octalmage\WPUnitTestAPI\Api\DefaultApi();
-$results = new \octalmage\WPUnitTestAPI\Model\NewResult(); // \octalmage\WPUnitTestAPI\Model\NewResult | Results to submit.
+$api_instance = new octalmage\wp-unit-test-api\Api\DefaultApi();
+$results = new \octalmage\wp-unit-test-api\Model\NewResult(); // \octalmage\wp-unit-test-api\Model\NewResult | Results to submit.
 
 try {
     $result = $api_instance->addResults($results);
@@ -35,11 +35,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **results** | [**\octalmage\WPUnitTestAPI\Model\NewResult**](../Model/\octalmage\WPUnitTestAPI\Model\NewResult.md)| Results to submit. |
+ **results** | [**\octalmage\wp-unit-test-api\Model\NewResult**](../Model/\octalmage\wp-unit-test-api\Model\NewResult.md)| Results to submit. |
 
 ### Return type
 
-[**\octalmage\WPUnitTestAPI\Model\Response**](../Model/Response.md)
+[**\octalmage\wp-unit-test-api\Model\Response**](../Model/Response.md)
 
 ### Authorization
 
