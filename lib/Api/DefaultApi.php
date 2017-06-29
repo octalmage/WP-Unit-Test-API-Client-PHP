@@ -90,8 +90,6 @@ class DefaultApi
     /**
      * Operation addResults
      *
-     * 
-     *
      * @param \octalmage\WPUnitTestApi\Model\NewResult $results Results to submit. (required)
      * @throws \octalmage\WPUnitTestApi\ApiException on non-2xx response
      * @return \octalmage\WPUnitTestApi\Model\Response
@@ -104,8 +102,6 @@ class DefaultApi
 
     /**
      * Operation addResultsWithHttpInfo
-     *
-     * 
      *
      * @param \octalmage\WPUnitTestApi\Model\NewResult $results Results to submit. (required)
      * @throws \octalmage\WPUnitTestApi\ApiException on non-2xx response

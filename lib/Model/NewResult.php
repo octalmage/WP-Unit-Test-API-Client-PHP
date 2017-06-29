@@ -55,12 +55,28 @@ class NewResult implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'commit' => 'string',
-        'results' => 'string'
+        'results' => 'string',
+        'meta' => 'string'
+    ];
+
+    /**
+      * Array of property to format mappings. Used for (de)serialization
+      * @var string[]
+      */
+    protected static $swaggerFormats = [
+        'commit' => null,
+        'results' => null,
+        'meta' => null
     ];
 
     public static function swaggerTypes()
     {
         return self::$swaggerTypes;
+    }
+
+    public static function swaggerFormats()
+    {
+        return self::$swaggerFormats;
     }
 
     /**
@@ -69,7 +85,8 @@ class NewResult implements ArrayAccess
      */
     protected static $attributeMap = [
         'commit' => 'commit',
-        'results' => 'results'
+        'results' => 'results',
+        'meta' => 'meta'
     ];
 
 
@@ -79,7 +96,8 @@ class NewResult implements ArrayAccess
      */
     protected static $setters = [
         'commit' => 'setCommit',
-        'results' => 'setResults'
+        'results' => 'setResults',
+        'meta' => 'setMeta'
     ];
 
 
@@ -89,7 +107,8 @@ class NewResult implements ArrayAccess
      */
     protected static $getters = [
         'commit' => 'getCommit',
-        'results' => 'getResults'
+        'results' => 'getResults',
+        'meta' => 'getMeta'
     ];
 
     public static function attributeMap()
@@ -125,6 +144,7 @@ class NewResult implements ArrayAccess
     {
         $this->container['commit'] = isset($data['commit']) ? $data['commit'] : null;
         $this->container['results'] = isset($data['results']) ? $data['results'] : null;
+        $this->container['meta'] = isset($data['meta']) ? $data['meta'] : null;
     }
 
     /**
@@ -202,6 +222,27 @@ class NewResult implements ArrayAccess
     public function setResults($results)
     {
         $this->container['results'] = $results;
+
+        return $this;
+    }
+
+    /**
+     * Gets meta
+     * @return string
+     */
+    public function getMeta()
+    {
+        return $this->container['meta'];
+    }
+
+    /**
+     * Sets meta
+     * @param string $meta Metadata about the environment (in JSON);
+     * @return $this
+     */
+    public function setMeta($meta)
+    {
+        $this->container['meta'] = $meta;
 
         return $this;
     }

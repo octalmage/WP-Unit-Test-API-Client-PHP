@@ -35,7 +35,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **results** | [**\octalmage\WPUnitTestApi\Model\NewResult**](../Model/\octalmage\WPUnitTestApi\Model\NewResult.md)| Results to submit. |
+ **results** | [**\octalmage\WPUnitTestApi\Model\NewResult**](../Model/NewResult.md)| Results to submit. |
 
 ### Return type
 
